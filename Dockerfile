@@ -37,4 +37,7 @@ ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+ADD hello_world $GOPATH/flask-app
 WORKDIR $GOPATH
+EXPOSE 5000
+CMD [ "go run", "./hello_world" ]
