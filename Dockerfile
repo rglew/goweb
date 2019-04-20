@@ -1,6 +1,6 @@
 FROM balenalib/raspberrypi3-alpine-golang
 
-ADD . /opt/hello_world
-WORKDIR /opt/hello_world
+ADD . /bin/sh
+WORKDIR /bin/sh
 
 CMD "hello_world"
