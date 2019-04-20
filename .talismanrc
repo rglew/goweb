@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: Dockerfile
+  checksum: 5b039f85fc4788566e458c287c8b4552d987e2101545c02b8ee3f2b057535384
+  ignore_detectors: []
